@@ -1,0 +1,240 @@
+[{
+  "_id": {
+    "$oid": "65700be68f51240a572ac5cd"
+  },
+  "name": "neuvillette",
+  "genshin": "neuvillette",
+  "equipo": "2",
+  "arma": "Catalizador",
+  "armatype": "recuerdos del fluir sempiterno",
+  "elemento": "Hydro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65700d388f51240a572ac5e7"
+  },
+  "name": "Fred",
+  "genshin": "Viajero",
+  "equipo": "1",
+  "arma": "Espada Ligera",
+  "armatype": "Deseo Ponzoñoso",
+  "elemento": "Hydro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65700d708f51240a572ac5e9"
+  },
+  "name": "Ei",
+  "genshin": "Shogun Raiden",
+  "equipo": "1",
+  "arma": "Lanza",
+  "armatype": "La Captura",
+  "elemento": "Electro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65700e7ad84b0622823f5a5e"
+  },
+  "name": "Furina",
+  "genshin": "Furina",
+  "equipo": "1",
+  "arma": "Espada Ligera",
+  "armatype": "Colmillo Lupino",
+  "elemento": "Hydro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65700eabd84b0622823f5a60"
+  },
+  "name": "Kaedehara Kazuha",
+  "genshin": "Kazuha",
+  "equipo": "1",
+  "arma": "Espada Ligera",
+  "armatype": "Espina de Hierro",
+  "elemento": "Anemo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657013c9ef514e6025468443"
+  },
+  "name": "Albedo",
+  "genshin": "Albedo",
+  "equipo": "2",
+  "arma": "Espada Ligera",
+  "armatype": "Huso de Cinabrio",
+  "elemento": "Geo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65701509ef514e602546844d"
+  },
+  "name": "Xiao",
+  "genshin": "Xiao",
+  "equipo": "1",
+  "arma": "Lanza",
+  "armatype": "Halcon de Jade",
+  "elemento": "Anemo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65701546ef514e602546844f"
+  },
+  "name": "Xiangling",
+  "genshin": "Xiangling",
+  "equipo": "2",
+  "arma": "Lanza",
+  "armatype": "Lanza de favonius",
+  "elemento": "Pyro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657015ceef514e6025468452"
+  },
+  "name": "Mona Megistus",
+  "genshin": "Mona",
+  "equipo": "1",
+  "arma": "Catalizador",
+  "armatype": "Oracion perdida a los vientos sagrados",
+  "elemento": "Hydro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6570162def514e6025468455"
+  },
+  "name": "Buer",
+  "genshin": "Nahida",
+  "equipo": "2",
+  "arma": "Catalizador",
+  "armatype": "Carta nautica",
+  "elemento": "Dendro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65701675ef514e6025468457"
+  },
+  "name": "Tignari",
+  "genshin": "Tignari",
+  "equipo": "2",
+  "arma": "Arco",
+  "armatype": "Prototipo luz de luna",
+  "elemento": "Dendro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657016d6ef514e602546845a"
+  },
+  "name": "Scaramouche",
+  "genshin": "Trotamundos",
+  "equipo": "1",
+  "arma": "Catalizador",
+  "armatype": "Sinfonia de los merodeadores",
+  "elemento": "Anemo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6570174fef514e602546845d"
+  },
+  "name": "Diluc Ragvindr",
+  "genshin": "Diluc",
+  "equipo": "1",
+  "arma": "Mandoble",
+  "armatype": "Lapida del lobo",
+  "elemento": "Pyro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657017aaef514e602546845f"
+  },
+  "name": "Freminet",
+  "genshin": "Freminet",
+  "equipo": "2",
+  "arma": "Mandoble",
+  "armatype": "Medula de la serpiente marina",
+  "elemento": "Cryo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65701828ef514e6025468463"
+  },
+  "name": "Dehya",
+  "genshin": "Dehya",
+  "equipo": "1",
+  "arma": "Mandoble",
+  "armatype": "Espada del tiempo",
+  "elemento": "Pyro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6570184fef514e6025468467"
+  },
+  "name": "Itto",
+  "genshin": "Itto",
+  "equipo": "2",
+  "arma": "Mandoble",
+  "armatype": "Espadon cornirrojo",
+  "elemento": "Geo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "657018b3ef514e602546846a"
+  },
+  "name": "Fishl",
+  "genshin": "Fishl",
+  "equipo": "2",
+  "arma": "Arco",
+  "armatype": "Ultimo acorde",
+  "elemento": "Electro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65701906ef514e602546846d"
+  },
+  "name": "Faruzan",
+  "genshin": "Faruzan",
+  "equipo": "1",
+  "arma": "Arco",
+  "armatype": "Arco de favonius",
+  "elemento": "Anemo",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65702e450d5410790c7d76d0"
+  },
+  "name": "Benett",
+  "genshin": "Benett",
+  "equipo": "2",
+  "arma": "Espada Ligera",
+  "armatype": "Hoja afilada celestial",
+  "elemento": "Pyro",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6570d769ce0e9bd65ba31f35"
+  },
+  "name": "Thoma",
+  "genshin": "Thoma",
+  "equipo": "1",
+  "arma": "Lanza",
+  "armatype": "Lanza de Favonius",
+  "elemento": "Pyro",
+  "__v": 0
+}]
