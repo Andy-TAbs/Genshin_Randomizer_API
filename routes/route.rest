@@ -1,0 +1,32 @@
+GET http://localhost:3000/api
+
+###
+GET http://localhost:3000/api/random/1
+
+###
+GET http://localhost:3000/api/656ffacef2c000e02b4c6263
+
+###
+DELETE  http://localhost:3000/api/657017e3ef514e6025468461
+
+###
+POST http://localhost:3000/api
+Content-Type: application/json
+
+{
+    "name": "Gorou",
+    "genshin": "Gorou",
+    "equipo": "2",
+    "arma": "Arco",
+    "armatype": "Arco del sacrificio",
+    "elemento": "Geo"
+}
+
+###
+PATCH http://localhost:3000/api/656a3757a438bf5b06889eed
+Content-Type: application/json
+
+{
+    "name": "Tartas1",
+    "genshin": "Tartaglia"
+}

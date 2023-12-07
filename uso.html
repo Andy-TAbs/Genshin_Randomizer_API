@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+        }
+    
+        h1, h2 {
+          text-align: center;
+        }
+    
+        #randomCharacters {
+          max-width: 800px; /* Aumenta el ancho del contenedor */
+          margin: 0 auto;
+        }
+    
+        ul {
+          list-style-type: none;
+          padding: 0;
+          font-size: 18px; /* Aumenta el tamaño de la fuente de la lista */
+        }
+    
+        button {
+          display: block;
+          margin: 20px auto;
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #3498db;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        select {
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+      </style>
+</head>
+<body>
+    <h1>Equipos de personajes Genshin Impact</h1>
+  
+    <div id="randomCharacters">
+      <h2>Personajes aleatorios para el abismo</h2>
+      <ul id="charactersList"></ul>
+      <button onclick="getRandomCharacters(1)">Obtener Personajes Equipo 1</button>
+      <button onclick="getRandomCharacters(2)">Obtener Personajes Equipo 2</button>
+    </div>
+
+
+    <h2>Crear Nuevo Personaje</h2>
+    <form id="createForm" onsubmit="createCharacter(event)">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="genshin">Genshin:</label>
+        <input type="text" id="genshin" name="genshin" required>
+
+        <label for="equipo">Equipo:</label>
+        <select id="equipo" name="equipo" required>
+            <option value="1">Equipo 1</option>
+            <option value="2">Equipo 2</option>
+        </select>
+
+        <label for="arma">Arma:</label>
+    <select id="arma" name="arma" required>
+        <option value="Espada Ligera">Espada Ligera</option>
+        <option value="Lanza">Lanza</option>
+        <option value="Catalizador">Catalizador</option>
+        <option value="Mandoble">Mandoble</option>
+        <option value="Arco">Arco</option>
+    </select>
+
+        <label for="armatype">Tipo de Arma:</label>
+        <input type="text" id="armatype" name="armatype" required>
+
+        <label for="elemento">Elemento:</label>
+        <input type="text" id="elemento" name="elemento" required>
+
+        <input type="submit" value="Crear Personaje">
+    </form>
+
+    
+</body>
+<script>
+    const apiUrl = 'http://localhost:3000/api'
+
+    async function getRandomCharacters(equipo) {
+      try {
+        const response = await fetch(`${apiUrl}/random/${equipo}`)
+        const data = await response.json()
+
+        const charactersList = document.getElementById('charactersList')
+        charactersList.innerHTML = ''
+
+        if (data.message) {
+          const characters = data.message.split(', ')
+          characters.forEach(character => {
+            const listItem = document.createElement('li')
+            listItem.textContent = character
+            charactersList.appendChild(listItem)
+          })
+        } else {
+          const errorItem = document.createElement('li')
+          errorItem.textContent = 'Error al obtener los personajes'
+          charactersList.appendChild(errorItem);
+        }
+      } catch (error) {
+        console.error('Error:', error)
+      }
+    }
+
+
+    async function createCharacter(event) {
+            event.preventDefault()
+            const form = document.getElementById('createForm')
+            const formData = new FormData(form)
+            const characterData = {}
+
+            formData.forEach((value, key) => {
+                characterData[key] = value
+            })
+
+            try {
+                const response = await fetch(`${apiUrl}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(characterData)
+                })
+
+                const data = await response.json()
+                alert('Personaje creado exitosamente')
+                console.log('Respuesta:', data)
+            } catch (error) {
+                console.error('Error:', error)
+                alert('Hubo un error al crear el personaje')
+            }
+        }
+
+
+
+  </script>
+</html>
